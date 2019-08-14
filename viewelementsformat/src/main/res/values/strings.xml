@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">ViewElementsFormat</string>
     <string name="b1">button</string>
-    <string name="ChB1">CheckBox</string>
+    <string name="ChB1">ButtonActive</string>
 </resources>
