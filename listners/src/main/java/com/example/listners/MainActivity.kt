@@ -2,10 +2,17 @@ package com.example.listners
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
+
+var flagOne = false
+var flagTwo = false
+var flagThree = false
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -16,8 +23,7 @@ class MainActivity : AppCompatActivity() {
         val Bt3 = findViewById<Button>(R.id.button3)
 
         var flagOne = false
-        var flagTwo = false
-        var flagThree = false
+
         Bt1.setOnClickListener {
             flagTwo = false
             flagThree = false
@@ -46,7 +52,14 @@ class MainActivity : AppCompatActivity() {
 //        }
     }
 
-    fun clickButton3(View view) {
-
+    fun clickButton3(myView: View) {
+        if (findViewById<Button>(myView.id) == button3) {
+            flagTwo = false
+            flagOne = false
+            if (!flagThree) {
+                flagThree = true
+                findViewById<TextView>(R.id.textView).text = "Button 3 has been pressed"
+            }
+        }
     }
 }
