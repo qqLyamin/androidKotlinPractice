@@ -6,13 +6,19 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+<<<<<<< HEAD
 
     <TextView
             android:text="@string/TextView"
+=======
+    <TextView
+            android:text="@string/TextViewLand"
+>>>>>>> 74624abe70b20f05243005411182580c177fd439
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+<<<<<<< HEAD
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.499"
             app:layout_constraintVertical_bias="0.345"/>
@@ -21,6 +27,16 @@
                   app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                   app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
                   app:layout_constraintTop_toBottomOf="@+id/textView"
+=======
+            android:layout_marginTop="132dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"/>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent"
+                  android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                  android:layout_marginStart="8dp"
+>>>>>>> 74624abe70b20f05243005411182580c177fd439
                   android:orientation="horizontal">
         <Button
                 android:text="@string/button1"
@@ -29,7 +45,11 @@
                 android:id="@+id/button1" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/textView"
+<<<<<<< HEAD
                 style="@style/CustomFontStyleMaroon"
+=======
+                style="@style/CustomFontStyleMaroon" app:layout_constraintHorizontal_bias="0.499"
+>>>>>>> 74624abe70b20f05243005411182580c177fd439
                 android:onClick="clickButton"/>
         <Button
                 android:text="@string/button2"
@@ -50,5 +70,8 @@
                 style="@style/CustomFontStyleMaroon"
                 android:onClick="clickButton"/>
     </LinearLayout>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 74624abe70b20f05243005411182580c177fd439
 </androidx.constraintlayout.widget.ConstraintLayout>
