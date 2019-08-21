@@ -28,10 +28,7 @@ class MainActivity : AppCompatActivity() {
                     findViewById<TextView>(R.id.textView).text = "Button 3 has been pressed"
                 }
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> 74624abe70b20f05243005411182580c177fd439
             button2 -> {
                 flagThree = false
                 flagOne = false
@@ -40,10 +37,7 @@ class MainActivity : AppCompatActivity() {
                     findViewById<TextView>(R.id.textView).text = "Button 2 has been pressed"
                 }
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> 74624abe70b20f05243005411182580c177fd439
             button1 -> {
                 flagTwo = false
                 flagThree = false
